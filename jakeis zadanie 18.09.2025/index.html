@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <button onclick="fun1()">suma</button>
+    <p id="wynik"> </p>
+    <script>
+        function fun1()
+        {
+            let a = parseInt(document.querySelector("#a").value);
+            let b = parseInt(document.querySelector("#b").value);
+            document.querySelector("#wynik").innerHTML += a + b;
+            console.log(a+b);
+            alert(a + b);
+            let p = Math.sqrt(Math.pow(a,2) + Math.pow(b,2))
+            document.querySelector("#wynik").innerHTML += "      c =" + p;
+            console.log( "c =" + p);
+            alert("c =" + p);
+        }
+    </script>
+</body>
+</html>
