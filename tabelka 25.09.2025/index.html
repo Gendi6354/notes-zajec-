@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tabelka</title>
+</head>
+<body>
+    cyfra: <input type="text" id="cyfra"><br>
+    kolor: <input type="text" id="kolor">
+    <button id="but_za">zastosuj</button>
+    <button id="but_czysc">wyczysc</button>
+    <div id="tabelka">
+    </div>
+    <script>
+        let tabela_div = document.querySelector("#tabelka")
+        let h = 5
+        let w = 5
+        for(let i =0;i<h;i++)
+        {   
+            for(let j = 0;j<w;j++)
+            {
+                tabela_div.innerHTML += "<div class='divs'><div>"
+            }
+            tabela_div.innerHTML += "<br>"
+        }
+        let lista = document.querySelectorAll(".divs")
+        lista.forEach(e =>
+        {
+            e.addEventListener("click",function()
+                {
+                    let kolor = document.querySelector("#kolor").value
+                    if(e.style.background == kolor)
+                    {
+                        e.style.background = ""
+                    }
+                    else
+                    {
+                        e.style.background = kolor
+                    }
+                }
+            )
+        })
+        const cyf_1 = [3,7,8,13,18,23]
+        const cyf_2 = [1,2,5,8,12,16,20,21,22,23]
+        const cyf_3 = [1,2,8,11,12,18,21,22]
+        let but_za = document.querySelector("#but_za").addEventListener("click",function(){
+            let cyfra = document.querySelector("#cyfra").value
+            let kolor = document.querySelector("#kolor").value
+            switch(cyfra)
+            {
+                case "1":
+                    cyf_1.forEach(e => {
+                        lista[e].style.background = kolor
+                    });
+                    break
+                case "2":
+                    cyf_2.forEach(e => {
+                        lista[e].style.background = kolor
+                    });
+                    break
+                case "3":
+                    cyf_3.forEach(e => {
+                        lista[e].style.background = kolor
+                    });
+                    break
+                
+            }
+        })
+        let but_wy = document.querySelector("#but_czysc").addEventListener("click",function()
+        {
+            lista.forEach(e => {
+                e.style.background = ""
+            })
+        })
+            
+    </script>
+</body>
+</html>

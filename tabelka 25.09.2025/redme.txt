@@ -1,0 +1,4 @@
+działanie strony:
+1.można wpisac kolor i naciskac kafelki tabeli przez co kafelek zmieni kolor na podany
+2.przyciskiem wyczyść kolory kafelkow sa usuwane
+3.w polu cyfra można wpisac cyfre(obsługiwane sa: 1,2,3) i w polu kolor wpisac kolor naciskając przycisk zastosuj z kafelkow stworzy się wzor tworząc podana cyfre
