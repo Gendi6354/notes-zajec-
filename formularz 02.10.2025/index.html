@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularz</title>
+</head>
+<body>
+    
+<form>
+    <lable id="login">Login: </lable>
+    <input type="text" id="login_i">
+    <lable id="haslo">Haslo: </lable>
+    <input type="text" id="haslo_i">
+    <button type="submit">Zaloguj</button>
+</form>
+
+
+<script>
+    const form = document.querySelector("form")
+    const p = document.createElement("p") 
+    form.addEventListener("submit",(e) =>
+    {
+        e.preventDefault()  
+        const login = document.querySelector("#login_i")
+        const haslo = document.querySelector("#haslo_i")
+        p.innerHTML = login.value + haslo.value
+        document.body.appendChild(p)
+        form.reset()
+        
+    })
+     
+
+</script>
+
+</body>
+</html>
