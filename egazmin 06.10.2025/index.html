@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        Szerokosc pomieszczenia[m]<input type="number" id="Szerokosc">
+        Długosc pomieszczenia<input type="number" id="dlugosc">
+        panel laminowany<input type="radio" name="jajko" id="kami" value="12">
+        panel winylowy<input type="radio" name="jajko" id="" value="14">
+        deska podłogowa<input type="radio" name="jajko" id="" value="18">
+    <button id="Oblicz" type="submit">Oblicz</button>
+    </form>
+    <p id="wynik"></p>
+    <script>
+        const form = document.querySelector("#form")
+        form.addEventListener("submit",(e)=>
+    {
+        e.preventDefault()
+        let value = document.querySelector("input[name='jajko']:checked").value
+        let x = parseInt(document.querySelector("#Szerokosc").value)
+        let y = parseInt(document.querySelector("#dlugosc").value)
+        document.querySelector("#wynik").innerHTML = "Pole wynosi: "+ (x * y) + " koszt wynosci: " + (value *x*y)
+    })
+    </script>
+</body>
+</html>
