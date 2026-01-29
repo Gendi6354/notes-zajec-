@@ -1,0 +1,132 @@
+html,body
+{
+    height: 100%;
+    width: 100%;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#main
+{   height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;        
+}
+main
+{
+    margin-top: 2%;
+    height: 80%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+#new_post
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid grey;
+    background-color: rgb(192, 188, 188);
+    border-radius: 2px;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 15%;
+    height: 5%;
+    transition: 0.5s;
+    font-size: 110%;
+}
+#new_post:hover
+{
+    background-color: rgb(115, 145, 209);
+    transform: scale(1.1);
+}
+.post
+{
+    border-radius: 2px;
+    margin: 2%;
+    border: 1px solid rgb(153, 149, 149);
+    min-height: 5%;
+    height: fit-content;
+    width: 90%;
+}
+.but_n
+{
+    color: white;
+}
+.creator
+{
+    border: 1px solid rgb(187, 184, 184);
+    background-color: rgb(216, 215, 215);
+    border-radius: 3px;
+    min-height: 1%;
+    height: fit-content;
+    min-width: 10%;
+    width: fit-content;
+    margin-left: 1%;
+    font-size: 130%;
+}
+.header
+{
+
+    background-color: rgb(245, 242, 242);
+    border-radius: 3px;
+    min-height: 1%;
+    height: fit-content;
+    min-width: 10%;
+    width: fit-content;
+    margin-left: 1%;
+    font-size: 110%;
+    padding: 0.2%;
+}
+.post_text
+{
+    min-width: 20%;
+    width: fit-content;
+    margin-left: 1%;
+    background-color: rgb(245, 242, 242);
+}
+#Wstaw
+{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(207, 205, 205);
+    border: 1px solid grey;
+    display: none;
+    position: absolute;
+    
+}
+#textarea_input
+{
+    margin-left: 4%;
+    resize: none;
+    height: 20vh;
+    width: 50%;
+}
+#header_input,#text_input
+{
+    margin-left: 4%;
+    font-size: 110%;
+}
+#header_input
+{
+    margin-left: 4%;
+    height: 10%;
+    width: 60%;
+}
+#create_post
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid grey;
+    background-color: rgb(192, 188, 188);
+    border-radius: 2px;
+    margin-top: 2%;
+    margin-left: 4%;
+    width: 15%;
+    height: 5%;
+    transition: 0.5s;
+    font-size: 110%;
+}
+#create_post:hover
+{
+    background-color: rgb(115, 145, 209);
+    transform: scale(1.1);
+}

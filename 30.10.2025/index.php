@@ -14,6 +14,7 @@
         <button name="zaloguj_butt">Zaloguj</button>
     </form>
     <?php
+    echo "jajko";
     if(isset($_POST["zaloguj_butt"]))
     {
         echo "<p>".$_POST["login"]." ".$_POST["haslo"];
